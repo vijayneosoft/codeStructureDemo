@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">LinieEnterprise</string>
+
+    <string name="preference_name">Preference Name</string>
+
+
 </resources>
