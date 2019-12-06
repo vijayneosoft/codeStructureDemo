@@ -14,16 +14,12 @@ class PreferenceManager {
     var preferenceManger: PreferenceManager? = null
     var sharedPreferences: SharedPreferences? = null
 
-    fun getInstance(): PreferenceManager {
-        if (preferenceManger == null || sharedPreferences == null) {
-            preferenceManger = PreferenceManager()
-            sharedPreferences = UserApplication.getAppInstance()
-                .getSharedPreferences(
-                    UserApplication.getAppInstance().getString(R.string.preference_name),
-                    Context.MODE_PRIVATE
-                )
-        }
-        return preferenceManger as PreferenceManager
+    init {
+        sharedPreferences = UserApplication.getAppInstance()
+            .getSharedPreferences(
+                UserApplication.getAppInstance().getString(R.string.preference_name),
+                Context.MODE_PRIVATE
+            )
     }
 
     fun saveString(key: String, value: String) {

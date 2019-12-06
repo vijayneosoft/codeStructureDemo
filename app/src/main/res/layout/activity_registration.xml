@@ -4,13 +4,31 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.nanosoft.noise.signup.RegistrationActivity">
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        tools:context="com.nanosoft.noise.signup.LoginActivity">
 
-    <TextView
-            android:layout_width="wrap_content"
+    <EditText
+            android:id="@+id/edtMobileNumber"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
-
+            android:hint="Mobile number"
+            android:textSize="@dimen/dimen_18sp"
+            android:maxLength="10"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorPrimary"
     />
+
+    <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/colorPrimary"
+    />
+
 
 </LinearLayout>

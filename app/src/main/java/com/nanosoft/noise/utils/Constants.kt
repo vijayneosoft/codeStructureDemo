@@ -6,4 +6,10 @@ package com.nanosoft.noise.utils
 
 class Constants {
 
+    companion object {
+
+        var KEY_USER_REGISTERED = "keyUserRegistered"
+
+    }
+
 }

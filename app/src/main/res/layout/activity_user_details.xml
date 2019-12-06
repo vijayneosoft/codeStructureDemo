@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+>
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+        >
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_margin="@dimen/dimen_20dp"
+                          android:layout_weight="1"
+                          android:gravity="center_vertical"
+                          android:orientation="vertical"
+            >
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Enter your details"
+                        android:textSize="@dimen/dimen_30dp"
+                        android:textStyle="bold"/>
+
+
+                <TextView
+                        android:id="@+id/txt_name"
+                        style="@style/userTextViewDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                />
+
+                <EditText
+                        android:id="@+id/edt_name_user_details"
+                        style="@style/userEditTextDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                />
+
+                <TextView
+                        android:id="@+id/txt_gender"
+                        style="@style/userTextViewDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+
+                />
+
+                <RadioGroup android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                >
+
+                    <RadioButton
+                            android:id="@+id/rd_btn_male"
+                            style="@style/userTextViewDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Male"
+                    />
+
+                    <RadioButton
+                            android:id="@+id/rd_btn_female"
+                            style="@style/userTextViewDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Female"
+
+                    />
+
+                </RadioGroup>
+
+
+                <TextView
+                        android:id="@+id/txt_location"
+                        style="@style/userTextViewDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Location"
+                />
+
+                <EditText
+                        android:id="@+id/edt_location"
+                        style="@style/userEditTextDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                />
+
+
+                <TextView
+                        android:id="@+id/txt_whatsapp"
+                        style="@style/userTextViewDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Whatsapp Number"
+                />
+
+                <EditText
+                        android:id="@+id/edt_whatsappNo_user_details"
+                        style="@style/userEditTextDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                />
+
+                <TextView
+                        android:id="@+id/txt_pincode"
+                        style="@style/userTextViewDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Pincode"
+                />
+
+                <EditText
+                        android:id="@+id/edt_pincode"
+                        style="@style/userEditTextDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:maxLength="6"
+                />
+
+            </LinearLayout>
+
+            <Button
+                    android:id="@+id/btnConfirmImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:text="Confirm"
+                    android:textAllCaps="true"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/dimen_18sp"
+            />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

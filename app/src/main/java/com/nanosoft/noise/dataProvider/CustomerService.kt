@@ -1,6 +1,6 @@
 package com.nanosoft.noise.dataProvider
 
-import com.nanosoft.noise.signup.RegistrationResponse
+import com.nanosoft.noise.signup.LoginResponse
 import retrofit2.Call
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
@@ -12,8 +12,12 @@ import retrofit2.http.POST
 
 interface CustomerService {
 
+    @POST("register")
+    @FormUrlEncoded
+    fun registerUser(@Field("mobile") mobileNumber: String): Call<LoginResponse>
+
     @POST("login")
     @FormUrlEncoded
-    fun registerUser(@Field("mobile") mobileNumber: String): Call<RegistrationResponse>
+    fun doLogin(@Field("mobile") mobileNumber: String): Call<LoginResponse>
 
 }

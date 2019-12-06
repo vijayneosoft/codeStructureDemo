@@ -1,7 +1,20 @@
 <resources>
-    <string name="app_name">LinieEnterprise</string>
+    <string name="app_name">Laundry App</string>
 
     <string name="preference_name">Preference Name</string>
+
+    <!--Error -->
+    <string name="error_empty_field">Field cannot be empty</string>
+    <string name="error_something_went_wrong">Something went wrong</string>
+
+    <!--text-->
+    <string name="txt_login">LOGIN</string>
+    <string name="info_edit_profile">Edit Profile</string>
+    <string name="info_languages">Language</string>
+    <string name="info_terms_condition">Terms &amp; Condition</string>
+    <string name="info_app_version">App Version</string>
+    <string name="info_contact_us">Contact us</string>
+    <string name="info_logout">Log out</string>
 
 
 </resources>
